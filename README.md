@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# 2dit_praktika
-=======
 # Gulp - сборка 2Dit
 
 > Используется Gulp 4
@@ -374,4 +371,7 @@ validateForms('.form-1', rules1, afterForm);
 
 1. Подключить код библиотеки swiped-events.js (код в файле _functions.js_).
 2. Использовать различные события из библиотеки плагина.
+<<<<<<< HEAD
 >>>>>>> 7fd11d0 (initial)
+=======
+>>>>>>> 7fd11d0d512edcf558ccd4e0f808c6ab10da59f4
