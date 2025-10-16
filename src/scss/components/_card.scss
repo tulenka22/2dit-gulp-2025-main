@@ -1,0 +1,155 @@
+img {
+    width: max-content;
+    height: 37px;
+    
+    
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 27px;
+    
+
+    &-headline {
+        font-family: "Cera Pro";
+        font-size: 48px;
+        font-weight: 500;
+        margin-left: 54px;
+    }
+
+    &__cards-container {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 18px;
+        margin-left: 54px;
+
+        .cards {
+            &:nth-child(1) {
+                background-image:
+                    linear-gradient(rgba(255, 0, 79, 0.2), rgba(255, 0, 79, 0.2)),
+                    linear-gradient(180deg, rgba(78, 79, 81, 0.2), rgba(0, 0, 0, 0.5)),
+                    url(../../img/background_card1.png);
+            }
+
+            &:nth-child(2) {
+
+                background-image:
+                    linear-gradient(rgba(255, 0, 79, 0.2), rgba(255, 0, 79, 0.2)),
+                    linear-gradient(180deg, rgba(78, 79, 81, 0.2), rgba(0, 0, 0, 0.5)),
+                    url(../../img/background_card2.jpg);
+            }
+
+            &:nth-child(3) {
+                background-image:
+                    linear-gradient(rgba(255, 0, 79, 0.2), rgba(255, 0, 79, 0.2)),
+                    linear-gradient(180deg, rgba(78, 79, 81, 0.2), rgba(0, 0, 0, 0.5)),
+                    url(../../img/background_card22.png),
+                    url(../../img/background_card21.png);
+
+
+                background-size:
+                    cover,
+                    cover,
+                    180% auto,
+                    cover;
+
+
+                background-position:
+                    center,
+                    center,
+                    10% 90%,
+                    center;
+
+                background-repeat: no-repeat;
+
+
+            }
+
+            &:nth-child(4) {
+                background-image:
+                    linear-gradient(rgba(255, 0, 79, 0.2), rgba(255, 0, 79, 0.2)),
+                    linear-gradient(180deg, rgba(78, 79, 81, 0.2), rgba(0, 0, 0, 0.5)),
+                    url(../../img/background_card3.png);
+            }
+
+            &:nth-child(5) {
+                background-image:
+                    linear-gradient(rgba(255, 0, 79, 0.2), rgba(255, 0, 79, 0.2)),
+                    linear-gradient(180deg, rgba(78, 79, 81, 0.2), rgba(0, 0, 0, 0.5)),
+                    url(../../img/background_card4.png);
+                background-color: rgba(255, 0, 79, 0.6);
+            }
+
+            background-color: rgba(255, 0, 79, 0.6);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: local;
+            display: flex;
+            width: 223px;
+            height: 451px;
+            flex-direction: column;
+            justify-content: space-between;
+
+            padding-left: 12px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            padding-right: 12px;
+            border-radius: 13px;
+
+            &__text {
+
+                &-headline {
+                    font-family: "Cera Pro";
+                    font-size: 22px;
+                    font-weight: 700;
+                    color: white;
+                    margin-bottom: 5px;
+
+                }
+
+                &-addition {
+                    font-family: "Cera Pro";
+                    font-size: 13px;
+                    font-weight: 400;
+                    color: white;
+                    margin-bottom: 18px;
+                }
+
+                &-button {
+                    width: 200px;
+                    height: 36px;
+                    border-radius: 90px;
+                    background-color: white;
+                    font-family: "Cera Pro";
+                    font-size: 13px;
+                    font-weight: 500;
+                    border-color: transparent;
+                    position: relative;
+
+                    &-link {
+                        position: absolute;
+                        width: 18px;
+                        height: 18px;
+                        right: 20%;
+                        top: 22%;
+
+                    }
+                }
+            }
+        }
+    }
+
+    &-show_link {
+        font-family: "Cera Pro";
+        font-size: 13px;
+        font-weight: 500;
+        color: rgba(255, 0, 79, 1);
+        margin-bottom: 18px;
+        align-self: center;
+        text-decoration: underline;
+        line-height: 120%;
+    }
+}
