@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-Medium.woff2') format('woff2'),
+        url('../fonts/CeraPro-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Norms Pro';
+    src: url('../fonts/TTNormsPro-Medium.woff2') format('woff2'),
+        url('../fonts/TTNormsPro-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+.header {
+    z-index: 1000;
+    background: white;
+    padding: 0 54px;
+    top: 0;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 89px;
+    width: 1300px;
+    align-self: center;
+    flex-wrap: nowrap;
+
+    .header_logo {
+        display: flex;
+        gap: 35px;
+        align-items: center;
+        width: max-content;
+        white-space: nowrap;
+        flex-shrink: 0;
+
+        img {
+            width: auto;
+            height: auto;
+            flex-shrink: 0;
+        }
+
+        &__button_communication {
+            width: 162px;
+            height: 42px;
+            border: solid;
+            border-radius: 845px;
+            border-color: rgba(255, 0, 79, 1);
+            background-color: rgba(255, 0, 79, 1);
+            font-size: 16.25px;
+            color: white;
+            font-family: "Cera Pro", sans-serif;
+            font-weight: 500;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+    }
+
+    .header_contacts {
+        display: flex;
+        gap: 36px;
+        align-items: center;
+        flex-shrink: 0;
+
+        &__contact {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            color: black;
+            font-size: 13px;
+            font-weight: 500;
+            font-family: "TT Norms Pro", sans-serif;
+            width: max-content;
+            white-space: nowrap;
+            flex-shrink: 0;
+
+            img {
+                width: auto;
+                height: auto;
+                flex-shrink: 0;
+            }
+        }
+
+        &__menu {
+            display: flex;
+            gap: 17px;
+            width: max-content;
+            white-space: nowrap;
+            align-items: center;
+            flex-shrink: 0;
+
+            img {
+                width: auto;
+                height: auto;
+                flex-shrink: 0;
+            }
+
+            &-burger {
+                @include burger;
+                flex-shrink: 0;
+            }
+        }
+    }
+}
