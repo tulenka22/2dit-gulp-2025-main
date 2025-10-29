@@ -1,14 +1,9 @@
-img {
-    width: max-content;
-    height: 37px;
-    
-    
-}
+
 
 .card {
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
+    margin-bottom: 54px;
     gap: 27px;
     
 
@@ -21,12 +16,13 @@ img {
 
     &__cards-container {
         display: flex;
-        flex-wrap: nowrap;
+        flex-wrap:wrap;
         gap: 18px;
         margin-left: 54px;
 
         .cards {
             &:nth-child(1) {
+                ::before{}
                 background-image:
                     linear-gradient(rgba(255, 0, 79, 0.2), rgba(255, 0, 79, 0.2)),
                     linear-gradient(180deg, rgba(78, 79, 81, 0.2), rgba(0, 0, 0, 0.5)),
@@ -98,6 +94,9 @@ img {
             padding-bottom: 12px;
             padding-right: 12px;
             border-radius: 13px;
+            &-img{
+                width: max-content;
+            }
 
             &__text {
 
@@ -128,6 +127,11 @@ img {
                     font-weight: 500;
                     border-color: transparent;
                     position: relative;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: rgb(233, 233, 233);
+                        color: rgb(43, 43, 43);
+                    }
 
                     &-link {
                         position: absolute;
@@ -135,7 +139,7 @@ img {
                         height: 18px;
                         right: 20%;
                         top: 22%;
-
+                        cursor: pointer;
                     }
                 }
             }
@@ -151,5 +155,8 @@ img {
         align-self: center;
         text-decoration: underline;
         line-height: 120%;
+        &:hover{
+            color:rgb(219, 0, 69); ;
+        }
     }
 }
